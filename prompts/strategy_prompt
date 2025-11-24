@@ -1,1 +1,191 @@
-xxx
+STRATEGY PROMPT
+Use and follow the role definition from paid-media-strategist-construct as your baseline identity and thinking style.
+All outputs must follow the global project instructions already defined in this Claude project.
+You must read and interpret the following input files directly from the Claude project environment:
+brief.csv
+Authoritative source for: campaign objective, target audience, programme/product details, markets, constraints, timeline, business context, expected outcomes.
+All strategic interpretation must come strictly from brief.csv.
+Raw GitHub reference:
+https://raw.githubusercontent.com/levi51097/paid-media-automation-construct/main/schema/brief.csv
+tactic_library.csv
+Contains the complete list of Construct Digital paid media tactics.
+Each row includes funnel stage, channel, format, and tactic name.
+All tactics in the Campaign Flow must be selected directly from tactic_library.csv.
+Raw GitHub reference: https://raw.githubusercontent.com/levi51097/paid-media-automation-construct/main/schema/tactic_library.csv
+Reference Material Policy
+Uploaded Construct proposals (Step IT Up, NUS AIDF, NUS Stanford, Toll, etc.) may be used only for structural inspiration.
+Do not copy or paraphrase any content (messages, flows, personas, CTAs, wording, or insight).
+All output must be original and based only on the CSV inputs.
+Objective
+Generate a clean, structured, executive-ready holistic campaign strategy.
+No numeric forecasting, budget modelling, or performance projection of any kind.
+OUTPUT STRUCTURE (FOLLOW EXACTLY)
+1. Campaign Overview
+Provide a concise strategic interpretation of the brief:
+Core objective
+
+
+High-level audience description
+
+
+High-level programme description
+
+
+Key markets
+
+
+Campaign mode: Budget-Driven or KPI-Driven
+ Describe how the mode affects strategic direction.
+ No numeric KPIs and no repetition of brief text.
+2. Audience Segmentation and Personas
+Interpret audience information from brief.csv.
+ Segmentation rules:
+Use one segment if audience differences are minimal
+
+
+Only segment when behaviour/motivation/intent differ meaningfully
+ For each valid segment, provide:
+
+
+Demographics
+
+
+Professional context
+
+
+Motivations
+
+
+Pain points
+
+
+Decision barriers
+
+
+Intent behaviours
+
+
+Messaging triggers
+ Keep concise and actionable.
+
+
+3. Recommended Channel Mix
+List channels without ranking or qualifiers.
+ For each channel provide only:
+Strategic role
+
+
+Why it fits the audience’s behaviour
+ Do not include tactics or formats.
+4. Conversion Funnel Architecture
+Use Construct Digital’s funnel: Prospecting → Retargeting → Nurturing
+ For each stage specify:
+Stage objective
+
+
+Mindset + psychological shift
+
+
+CTA
+
+
+KPI type (Traffic, MQL, SQL, Application, etc.)
+
+
+Campaign type (Prospecting / Retargeting / Nurturing)
+ Do not include tactics, numeric KPIs, movement logic, or pacing.
+5. Messaging Structure
+Provide:
+Umbrella messaging
+
+
+Prospecting messaging (segmented only if meaningful segments exist)
+
+
+1–2 Retargeting messages
+
+
+1–2 Nurturing messages
+ Messages should be directional, not copywriting.
+
+
+6. Campaign Flow
+Use tactic_library.csv to select tactics for each funnel stage.
+ Output must be clean, visual, structured, and deck-ready.
+Strict rules:
+Bullet lists only
+
+
+No sentences
+
+
+No explanations
+
+
+No behaviour descriptions
+
+
+No commentary
+
+
+No transitions
+
+
+No qualifiers (essential/recommended/etc.)
+
+
+No numeric KPIs
+
+
+No timeline or pacing
+
+
+Each bullet must follow format: Channel: Tactic Name
+
+
+Use only tactics from tactic_library.csv
+
+
+Content must be fully original
+
+
+Required structure:
+Prospecting
+Channel: Tactic Name
+
+
+Channel: Tactic Name
+
+
+Channel: Tactic Name
+
+
+Retargeting
+Channel: Tactic Name
+
+
+Channel: Tactic Name
+
+
+Channel: Tactic Name
+
+
+Nurturing
+Channel: Tactic Name
+
+
+Channel: Tactic Name
+
+
+Channel: Tactic Name
+
+
+STYLE REQUIREMENTS
+Strategic, concise, structured, senior tone.
+No fluff, filler, clichés, or restating the prompt.
+No numeric modelling.
+All content must be original.
+FINAL INSTRUCTION
+After reading brief.csv and tactic_library.csv, generate a fully original campaign strategy strictly following the structure above and adhering to the reference policy.
+No disclaimers or apologies.
+Output must be deck-ready.
